@@ -36,3 +36,4 @@ Epochs: 10
 L2-reg: 10^(-4)
 MiniBatchSize: 128
 
+Already after the first epoch an accuracy of 98% is reached on the test data.
