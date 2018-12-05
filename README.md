@@ -6,11 +6,8 @@ MNIST_Classification.ipynb is a Jupyter notebook to run a simple convolutional n
 It uses torch as a backend for this machine learning task and uses the following packages:
 
 from __future__: print_function
-
 argparse
-
 torch
-
 from torchvision:  datasets, transforms
 
 
@@ -18,51 +15,31 @@ from torchvision:  datasets, transforms
 
 The architecture and paramenters for the model look as follows:
 
-conv2dLayer(3,8,'Padding',1)
-
-batchNormalizationLayer
-
-reluLayer
-
-maxPooling2dLayer(2,'Stride',2)
-
-conv2dLayer(3,16,'Padding',1)
-
-batchNormalizationLayer
-
-reluLayer
-
-maxPooling2dLayer(2,'Stride',2)
-
-conv2dLayer(3,32,'Padding',1)
-
-batchNormalizationLayer
-
-reluLayer
-
-fullyConnectedLayer(10)
-
-softmaxLayer
-
-classificationLayer('CrossEntropy')
+Conv2d Layer (3,8,'Padding',1)
+BatchNormalization Layer
+ReLU Layer
+MaxPool Layer (2,'Stride',2)
+Conv2d Layer (3,16,'Padding',1)
+BatchNormalization Layer
+ReLU Layer
+MaxPool Layer (2,'Stride',2)
+Conv2d Layer (3,32,'Padding',1)
+BatchNormalization Layer
+ReLU Layer
+Fully Connected Layer (10)
+Softmax Layer
+Classification Layer (CrossEntropy)
 
 
 Training parameters: 
 
 ADAM optimizer
-
 GradientDecayFactor (beta1): 0.9000
-
 SquaredGradientDecayFactor (beta2): 0.9990
-
 Epsilon: 10^(-8)
-
 LearningRate: 0.01
-
 Epochs: 10
-
 L2-reg: 10^(-4)
-
 MiniBatchSize: 128
 
 
