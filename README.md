@@ -8,8 +8,11 @@ It uses torch as a backend for this machine learning task and uses the following
 ---------------------------------------------------------------------------------------
 
 from __future__: print_function
+
 argparse
+
 torch
+
 from torchvision:  datasets, transforms
 
 
