@@ -51,12 +51,19 @@ Training parameters:
 ---------------------------------------------------------------------------------------
 
 ADAM optimizer
+
 GradientDecayFactor (beta1): 0.9000
+
 SquaredGradientDecayFactor (beta2): 0.9990
+
 Epsilon: 10^(-8)
+
 LearningRate: 0.01
+
 Epochs: 10
+
 L2-reg: 10^(-4)
+
 MiniBatchSize: 128
 
 
